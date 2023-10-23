@@ -1,0 +1,168 @@
+.footermain {
+    /* border:2px solid green;*/
+    background-color: rgb(58, 56, 56);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 30vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footlogo {
+    /*border:2px solid yellow;*/
+    width: 30%;
+    height: 100%;
+}
+
+.footsecond {
+    /* border:2px solid red;*/
+    height: 80%;
+    width: 25vw;
+}
+
+.footfirst {
+    /*border:2px solid red;*/
+    height: 80%;
+    width: 25vw;
+}
+
+.footthird {
+    /* border:2px solid brown; */
+    height: 80%;
+    width: 25%;
+}
+
+.foottitle {
+    opacity: 0.9;
+    font-size: 2.7vh;
+    height: 3.2vh;
+    width: 12vh;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 2.3vh;
+}
+
+.foottitle1 {
+    opacity: 0.9;
+
+    font-size: 2.7vh;
+    height: 3.2vh;
+    width: 8.5vh;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 2vh;
+}
+
+.foottitle4 {
+    opacity: 0.9;
+    font-size: 2.7vh;
+    height: 3.2vh;
+    width: auto;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 2vh;
+}
+
+.foottitle2 {
+    opacity: 0.9;
+    font-size: 2.7vh;
+    height: 3.2vh;
+    width: 120px;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 2vh;
+}
+
+.footeritem {
+    margin: 5px 0;
+    font-size: 2vh;
+    opacity: 0.6;
+}
+
+.footeritem:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.footfirst {
+    /*border:2px solid rgb(18, 228, 168);*/
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.socialitem {
+    color: white;
+    cursor: pointer;
+    /*border:2px solid pink;*/
+    opacity: 0.6;
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.socialitem:hover {
+    opacity: 1;
+}
+
+.sociallink {
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .footermain {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footfirst {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 190px;
+    }
+
+    .footsecond {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 190px;
+    }
+
+    .footthird {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 190px;
+    }
+
+    .foottitle4 {
+        width: auto;
+    }
+
+    .socialitem {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .foottitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .foottitle2 {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foottitle1 {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

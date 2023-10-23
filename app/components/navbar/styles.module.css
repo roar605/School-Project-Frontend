@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  /* border: 2px solid red; */
+  background-color: white;
+  height:85px;
+}
+.navwrapper{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  height: 90px;
+  
+  padding-left: 20px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  padding-right: 20px;
+  position: relative; /* Add this to make the dropdowns work */
+}
+
+.navbar a {
+  color: #049c7c;
+  font-weight: 600;
+  font-size: larger;
+  padding: 10px 10px;
+  transition: all 0.4s ease;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.navbar a:hover {
+  color: #073b52;
+  text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: auto;  
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.navbar li:hover .dropdownContent {
+  display: block;
+  min-width: 200px; 
+}
+
+/* Submenu Styles */
+.submenu {
+  position: relative;
+}
+
+.submenuContent {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.submenu:hover .submenuContent {
+  display: block;
+  min-width: 200px; 
+}
+
+.dropdown:hover .dropdownContent{
+  display: block;
+  width: 20px;
+  
+  border-radius:4px;
+  background-color: #fff;
+  /* box-shadow: 0px 4px 8px rgba(0,0,0,0.2); */
+  padding: 10px;
+  position: absolute;
+  /* top:100%; */
+  /* left:0; */
+  /* z-index: 2; */
+
+
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: auto; 
+}
+
+
+.dropdown a {
+  color: #049c7c;
+  text-decoration: none;
+  padding: 8px;
+}
+
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: auto; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: width 0.3s; 
+}
+
+
+.submenu {
+  padding: 10px;
+}
+
+
+.submenu:hover {
+  background-color: #f2f2f2;
+}
+
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  width: 200px; 
+}
+
