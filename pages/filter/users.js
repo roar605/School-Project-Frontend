@@ -1,0 +1,51 @@
+export const Users = [
+    {
+        "id": 1,
+        "Subject" : "Biology",
+        "Languages" :"English, Hindi",
+        "Classes" : "6-8",
+        "Current Workplace" : "St. Stephen's, Ranchi",
+    },
+    {
+        "id": 2,
+        "Subject" : "Mathematics",
+        "Languages" :"English",
+        "Classes" : "6-8",
+        "Current Workplace" : "DPS, Bokaro",
+    },
+    {
+        "id": 4,
+        "Subject" : "Physics",
+        "Languages" :"English, Hindi",
+        "Classes" : "6-8",
+        "Current Workplace" : "DPS, Delhi",
+    },
+    {
+        "id": 5,
+        "Subject" : "Hindi",
+        "Languages" :"English, Hindi",
+        "Classes" : "6-8",
+        "Current Workplace" : "Chinmaya, Bokaro",
+    },
+    {
+        "id": 6,
+        "Subject" : "Painting",
+        "Languages" :"English",
+        "Classes" : "6-8",
+        "Current Workplace" : "DPS, Kerala",
+    },
+    {
+        "id": 7,
+        "Subject" : "History",
+        "Languages" :"English, Hindi, Tamil",
+        "Classes" : "6-8",
+        "Current Workplace" : "CPS, Chennai",
+    },
+    {
+        "id": 8,
+        "Subject" : "Mathematics",
+        "Languages" :"English",
+        "Classes" : "6-8",
+        "Current Workplace" : "DPS, Hyderabad",
+    },
+]
