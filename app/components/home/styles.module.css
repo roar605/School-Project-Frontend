@@ -2,9 +2,12 @@
   position: relative;
   margin-top: 110px;
   width: 100vw;
+  
+
 }
 
 #bg1 {
+  
   position: absolute;
   bottom: 0;
   left: -12.47%;
@@ -25,6 +28,7 @@
   margin: 0 auto;
   position: relative;
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .hometext {
@@ -34,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 .hometext h1{
   color: #041b31;
@@ -51,6 +56,7 @@
   border: 1px solid #073b52;
 }
 .design form .btnlg{
+  
   background-color: #06aa8b;
   border: none;
   padding: 10.5px;
@@ -63,6 +69,7 @@
 }
 
 .homeimg {
+  
   width: 50%;
   display: flex;
   height: 85vh;
@@ -70,6 +77,7 @@
 }
 
 .homeimg img {
+  margin-bottom: 1%;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -82,8 +90,9 @@
   margin: 0 auto;
   padding: 5rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 7%;
+  grid-template-columns: repeat(auto-fill,minmax(262px,1fr));
+  grid-template-rows: repeat(100px,auto);
+  gap: 5%;
 }
 .logo {
   transition: all 0.5s;
@@ -188,20 +197,27 @@
 /* developers */
 .developers{
   width: 80%;
+  /* height: 900px; */
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
   align-items: center;
+ 
 }
 .devcards{
+  overflow: hidden;
+  position: relative;
+  /* z-index: 5; */
+  border: 2px solid red;
   width: 98%;
+  margin: 1rem auto;
   display: grid;
-  gap: 5%;
+  gap: 2%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .heading{
-  padding: 10px 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,9 +228,12 @@
 }
 .heading h3{
   color: #049c7c;
+  margin-top: -1rem;
   font-size: 2rem;
 }
 .dev{
+  margin: 1%;
+  padding: 1%;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -229,12 +248,40 @@
   text-align: center;
 }
 .devimages{
-  width: 110px;
-  height: 130px;
+  width: 100px;
+  height: 120px;
   border-radius: 7%;
 }
 .media{
   color: #06aa8b;
   display: flex;
   gap: 15%;  
+}
+
+@media screen and (max-width: 770px) {
+  
+  #bg1{
+    opacity: 0.6;
+  }
+  
+  #bg2{
+    opacity: 0.6;
+  }
+  .features{
+    margin-bottom: 8%;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  #bg1{
+    opacity: 0.3;
+  }
+  #bg2{
+    opacity: 0.3;
+  }
+  .features{
+    margin-bottom: 15%;
+  }
+  
 }

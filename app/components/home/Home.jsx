@@ -94,10 +94,10 @@ const Home = () => {
             <h2>Meet The Team</h2>
             <h3>Our Professionals</h3>
           </div>
-          <div className={styles.devcards}>
+            <div className={styles.devcards}>
             {/* developer_01 */}
             <div className={styles.dev} id={styles.dev1}>
-              
+
               <Image className={styles.devimages} src={dev1}></Image>
               <h3>Rohit Kumar Singh</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, dolorum! Consectetur, laboriosam.</p>
@@ -222,10 +222,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-
-
+            </div>
         </div>
       </section>
     </div>

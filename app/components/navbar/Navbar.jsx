@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './styles.module.css';
 
 import Link from 'next/link';
+import{
+  FaBars,
+  FaCross
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
