@@ -28,7 +28,8 @@ const Home = () => {
           <Image id={styles.bg1} src={bg1}></Image>
           <Image id={styles.bg2} src={bg2}></Image>
           <div className={styles.hometext}>
-            <h1>Who we are ?? </h1>
+            <h1>Who we are ??</h1>
+         
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nesciunt iure error? Fugiat beatae exercitationem dolor ipsa, repudiandae animi doloremque libero minus voluptate reprehenderit modi quos blanditiis error at! Sequi.</p>
             <div className={styles.design}>
               <div className={styles.latter}>
