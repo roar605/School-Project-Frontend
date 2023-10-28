@@ -5,17 +5,17 @@ import { AuthContextProvider } from "@/context/authContext";
 
 
 export default function Index() {
-    return (
-      <>
-        <AuthContextProvider>
+  return (
+    <>
+      <AuthContextProvider>
         <Navbar />
         <Home />
-        <Footer/>
+        <Footer />
 
-        </AuthContextProvider>
-       
-      
-       
-      </>
-    );
-  }
+      </AuthContextProvider>
+
+
+
+    </>
+  );
+}
