@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles.module.css';
-
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -8,7 +7,7 @@ const Navbar = () => {
     <header className={styles.header}>
       <div className={styles.navwrapper}>
         <Link href="/" className={styles.logo}>
-          <img src="images/logo.png" alt="Logo" />
+          <img src="../images/logo.png" alt="Logo" />
         </Link>
         <nav>
           <ul className={styles.navbar}>
@@ -39,6 +38,13 @@ const Navbar = () => {
                   <li><Link href="/Grants">Grants</Link></li>
                 </ul> */}
                 </li>
+                <li className={styles.submenu}>
+                  <Link href="/school">School</Link>
+                  {/* <ul className={styles.submenuContent}>
+                  <li><Link href="/Incentives">Incentives</Link></li>
+                  <li><Link href="/Grants">Grants</Link></li>
+                </ul> */}
+                </li>
               </ul>
             </li>
             <li className={styles.navitem}>
@@ -59,3 +65,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+//School-Project-Frontend\pages\school
+//School-Project-Frontend\pages\teacher
