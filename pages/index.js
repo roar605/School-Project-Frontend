@@ -1,17 +1,20 @@
 import Navbar from "@/app/components/navbar/Navbar";
 import Home from "@/app/components/home/Home";
 import Footer from "@/app/components/footer/Footer";
-import {store} from '../redux/store';
-import { Provider } from 'react-redux'
+import { AuthContextProvider } from "@/context/authContext";
+
 
 export default function Index() {
     return (
       <>
-      <Provider store={store}>
+        <AuthContextProvider>
         <Navbar />
         <Home />
         <Footer/>
-      </Provider>
+
+        </AuthContextProvider>
+       
+      
        
       </>
     );
