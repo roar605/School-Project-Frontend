@@ -21,6 +21,8 @@
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+ 
+
 }
 .logo img {
   height: 90px;
@@ -30,6 +32,7 @@
 
 .navbar {
   display: flex;
+  
 }
 
 .navbar li {
@@ -149,3 +152,35 @@
   width: 200px; 
 }
 
+@media screen and (max-width: 925px) {
+  .navwrapper{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 770px) {
+  .header{
+    height: 70px;
+  }
+  .navbar a {
+    
+    font-weight: 400;
+    font-size: larger;
+    padding: 10px 10px;
+    
+  
+  }
+  .logo img{
+    height: 70px;
+  }
+  
+}
+@media screen and (max-width: 450px) {
+  .header{
+    height: 40px;
+  }
+  .logo img{
+    height: 50px;
+  }
+}
