@@ -1,23 +1,34 @@
 import React from 'react';
 import styles from './styles.module.css';
 import Link from 'next/link';
+<<<<<<< HEAD
 import{
   FaBars,
   FaCross
 } from "react-icons/fa";
 
+=======
+// import logo from "@/public/images/logo.png"
+>>>>>>> 6faeff3653ff12c46179132ded85af2fd3554108
 const Navbar = () => {
   return (
     <header className={styles.header}>
       <div className={styles.navwrapper}>
         <Link href="/" className={styles.logo}>
+<<<<<<< HEAD
           <img src="../images/logo.png" alt="Logo" />
+=======
+           <img src="../images/logo.png" alt="Logo" />
+           
+           {/* <Image src={logo}></Image> */}
+>>>>>>> 6faeff3653ff12c46179132ded85af2fd3554108
         </Link>
         <nav>
           <ul className={styles.navbar}>
             <li><Link href="#">Home</Link></li>
             <li className={styles.dropdown}>
               <Link href="/Categories">Categories </Link>
+              
               <ul className={styles.dropdownContent}>
                 <li className={styles.submenu}>
                   <Link href="/teacher">Teacher</Link>
@@ -58,6 +69,7 @@ const Navbar = () => {
             </li>
             <li><Link href="/feedback">Feedback</Link></li>
             <li><Link href="/contact">Contact</Link></li>
+            {/* <li><Link href="/school">School</Link></li> */}
           </ul>
         </nav>
 
