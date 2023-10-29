@@ -7,12 +7,12 @@ import { AuthContextProvider } from "@/context/authContext";
 export default function Index() {
   return (
     <>
-      <AuthContextProvider>
+      
         <Navbar />
         <Home />
         <Footer />
 
-      </AuthContextProvider>
+     
 
 
 
