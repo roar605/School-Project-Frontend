@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import axios from 'axios';
 import logInImage from '@/public/images/SignImage.png';
+import { useRouter } from 'next/router'
 const index = () => {
 
     const username=useRef("");
@@ -11,6 +12,8 @@ const index = () => {
     const password=useRef("");
     const [role,setRole]=useState("student");
     const phone=useRef("");
+    const [allgood,setAllgood]=useState(true);
+    const router = useRouter()
 
     const handleChange = (e) => {
         
@@ -31,15 +34,25 @@ const index = () => {
           };
           try {
             await axios.post("http://localhost:5000/api/auth/register", user);
+            if(allgood==false){
+              setAllgood(true);
+            }
+            router.push("/login");
             
           } catch (err) {
             console.log(err);
+            setAllgood(false);
           }
         
       };
 
     return (
         <div className={styles.signup}>
+          {!allgood?(
+            <div>
+              Some Error Occured
+            </div>
+          ):(<span></span>)}
             <div className={styles.form}>
                 <Image className={styles.image} src={logInImage} />
                 <div className={styles.signinlogin}>
