@@ -1,0 +1,21 @@
+.log {
+    margin-top: 2px;
+}
+.contri {
+    margin-top: 105px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content:center;
+}
+.hd{
+    font-weight: 2500;
+}
+.link{
+    text-decoration:solid;
+    font-size: large;
+    margin-left: 10px;
+    color: #073b52;
+}
